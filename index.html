@@ -46,6 +46,16 @@
         );
     };
 
+    const Footer = ({text}) => {
+        return(
+            <footer className="bg-dark py-5">
+                <div className="container">
+                    <p className="text-white text-center fs-2">{text}</p>
+                </div>
+            </footer>
+        );
+    };
+
     const MovieCard = ({src, title, age}) => {
         return (
                 <div className="card col mb-4">
@@ -87,6 +97,8 @@
                         age={2023}/>
                 </div>
             </div>
+
+            <Footer text="КиноТВПоиск"/>
         </>
     );
 
